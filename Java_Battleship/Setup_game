@@ -1,1 +1,34 @@
+package gameModels;
+import java.util.Scanner;
 
+
+public class GameBoard {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Introduction here 
+		intro();
+
+	}
+	
+	public static void intro() {
+		System.out.println("Welcome to the game of Battleships!");
+		//Explanation
+		System.out.println("There will be one ship starting out for each team");
+		//Objective
+		System.out.println("The objective is to figure out the opposing player's "
+				+ "ship coordinates and sink their battleship");
+		System.out.println("Ready to play? reply with yes or no");
+		// Gather User Input 
+		Scanner userIn = new Scanner(System.in);
+		String ready = userIn.nextLine();
+		
+		if (ready.equals("yes")) {
+			System.out.println("Good, let the game commence!");
+			start();
+		}
+		else {
+			System.out.println("That's too bad, perhaps another time?");
+		}
+		userIn.close();
+	}
