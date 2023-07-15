@@ -32,3 +32,6 @@ public class GameBoard {
 		}
 		userIn.close();
 	}
+        // Gui implementation possible for player inputs?? 
+	// Player inputs would include how long the game would go on based off number of ships 
+        // Game board needs to be coded / well thought out
